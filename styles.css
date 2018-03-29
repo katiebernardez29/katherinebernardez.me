@@ -4,10 +4,10 @@ body {
 h1 {
     color: blue;
 }
-p1 {
+p #colorblue{
   color: blue;
 }
-p2 {
+p #colorpurple{
     color: purple;
 }
 li {
