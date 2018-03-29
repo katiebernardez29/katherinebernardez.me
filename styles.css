@@ -4,8 +4,11 @@ body {
 h1 {
     color: blue;
 }
-p {
-    color: red;
+p1 {
+  color: blue;
+}
+p2 {
+    color: purple;
 }
 li {
     color: red;
