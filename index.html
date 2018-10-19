@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Katherine Bernardez</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <!--Fonts taken from https://fonts.google.com/-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!--Icons taken from https://fontawesome.com/-->
@@ -23,10 +23,11 @@
         </div>
         <!--Flex container that contains the left side of the navigation bar-->
         <div class="nav">
-          <li><a href="http://dartmouthwomensclubsoccer.blogspot.com/" target="blank">Game Summaries</a></li>
-          <li><a href="https://calendar.google.com/calendar/embed?src=veag1mu85dunjrrhhullloljrc@group.calendar.google.com&ctz=America/New_York" target="blank">Team Calendar</a></li>
-          <li><a href="https://sites.google.com/site/region1clubsoccer/" target="blank">League Standings</a></li>
-          <li><a href="https://www.youtube.com/watch?v=4IGL1GxQQ9w&feature=youtu.be" target="blank">Intro Video</a></li>
+          <li>Past Projects</li>
+          <li><a href="http://doc-planner.surge.sh/" target="blank">DOC Planner</a></li>
+          <li><a href="http://katherinebernardez-cs52-lab4.surge.sh/" target="blank">Blog</a></li>
+          <!-- <li><a href="http://katherinebernardez-cs52-lab3.surge.sh/" target="blank">Notes</a></li> -->
+          <li><a href="https://dartmouth-cs52-18s.github.io/lab2-katiebernardez29/" target="blank">Buzzfeed Quiz</a></li>
         </div>
       </ul>
     </nav>
@@ -41,36 +42,44 @@
       <div class="main">
         <h1 class="header">Welcome to my webpage!</h1>
         <p>This is where you can learn fun facts about me.</p>
-        <input class="email" type="text" placeholder="Email Address">
-        <input class="submit" type="submit" value="Submit">
+        <input class="email" type="text" id="emailField" placeholder="Email Address">
+        <input class="submit" type="submit" value="Submit" onclick="clearFields()">
         <p>Want weekly updates from me? Enter your email address!</p>
       </div>
     </div>
     <div class="content">
-      <h1>About Me</h1>
+      <h1 class="header2">About Me</h1>
+      <p>My name is Katherine Bernardez and I am from Seattle, WA. I am a Junior at Dartmouth College in Hanover, NH. I am a Computer Science major and a Chinese minor. I am passionate about programming, traveling and playing soccer. My favorite animals are elephants!</p>
+      <p>I am proficient in JavaScript, Python, Java and HTML/CSS and I have experience with React/Redux, Amazon Web Services, Google Analytics, Visual Studio Code, Atom, Git, Android Studio, Eclipse and PyCharm. I speak Mandarin Chinese and am on the Dartmouth Women's Club Soccer team.</p>
     </div>
     <!--Flex container that contains the columns-->
     <div class="columns">
       <!--Flex container that contains the first column-->
       <ul class="column1">
-        <li>Favorite Foods</li>
-        <li><a href="#">Pasta</a></li>
-        <li><a href="#">Pizza</a></li>
-        <li><a href="#">Sushi</a></li>
+        <li>Relevant Coursework</li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-1" target="blank">COSC 1</a></li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-10" target="blank">COSC 10</a></li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-30" target="blank">COSC 30</a></li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-52" target="blank">COSC 52</a></li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-65" target="blank">COSC 65</a></li>
+        <li><a href="http://dartmouth.smartcatalogiq.com/en/2017/orc/Departments-Programs-Undergraduate/Mathematics/MATH-Mathematics-Undergraduate/MATH-22" target="blank">MATH 22</a></li>
       </ul>
       <!--Flex container that contains the second column-->
       <ul class="column2">
-        <li>Favorite Places</li>
-        <li><a href="#">Seattle</a></li>
-        <li><a href="#">Hawaii</a></li>
-        <li><a href="#">Cincinnati</a></li>
+        <li>Work Experience</li>
+        <li><a href="https://www.myupside.com/" target="blank">Upside Commerce</a></li>
+        <li><a href="https://www.seabirdapps.com/" target="blank">Seabird Apps</a></li>
+        <li><a href="https://shop.nordstrom.com/" target="blank">Nordstrom</a></li>
+        <li><a href="https://www.radiantvisionsystems.com/" target="blank">Radiant Visions Systems</a></li>
       </ul>
       <!--Flex container that contains the third column-->
       <ul class="column3">
-        <li>Favorite Animals</li>
-        <li><a href="#">Elephants</a></li>
-        <li><a href="#">Koalas</a></li>
-        <li><a href="#">Small Dogs</a></li>
+        <li>Leadership & Service</li>
+        <li><a href="https://coderdojo.com/" target="blank">CoderDojo</a></li>
+        <li><a href="https://web.cs.dartmouth.edu/" target="blank">Computer Science Department</a></li>
+        <li><a href="https://childhaven.org/" target="blank">Childhaven</a></li>
+        <li><a href="https://students.dartmouth.edu/collis/organizations/student-organizations-governing-boards/programming-board" target="blank">Dartmouth Programming Board</a></li>
+        <li><a href="https://alphaphi.org/" target="blank">Alpha Phi Sorority</a></li>
       </ul>
       <!--Flex container that contains the fourth column-->
     </div>
@@ -86,8 +95,15 @@
           <li><a href="https://www.facebook.com/katie.bernardez.5" target="blank"><i class="fab fa-facebook-f"></i><a/></li>
           <li><a href="https://www.instagram.com/katieebaabyyy/" target="blank"><i class="fab fa-instagram"></i></a></li>
           <li><a href="https://www.linkedin.com/in/katherine-bernardez-0ba461157/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/katieebaabyyy?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
         </div>
       </ul>
     </nav>
   </body>
 </html>
+
+<script type="text/javascript">
+  function clearFields() {
+      document.getElementById("emailField").value=""
+  }
+</script>
