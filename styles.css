@@ -1,12 +1,353 @@
+/* All color vales taken from https://slack.com/ */
+/* Used https://www.w3schools.com/ to look up general information about CSS elements */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: powderblue;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
-h1 {
-    color: blue;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#colorpurple{
-    color: purple;
+
+/* Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.navigation {
+  background: white;
+  display: flex;
+  /* Pushes the left and right sides of the navigation bar to opposite ends */
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-li {
-    color: red;
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 25px 15px;
+  color: #323651;
+}
+
+.nav a:hover {
+  color: #3f46ad;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+
+/* Aligns the left and right sides of the main content */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Formats the right side of the main content */
+.main {
+  flex: 50%;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Formats the header */
+.header {
+  background: white;
+  font-size: 90px;
+  color: #323651;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  color: #5b5e6d;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+/* Adapted from: https://slack.com/ */
+.email {
+  background-color: white;
+  color: #5b5e6d;
+  font-weight: 400px;
+  font-size: 15px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 20px 15px;
+  width: 60%;
+  margin-bottom: 5px;
+}
+
+/* Adapted from: https://slack.com/ */
+.submit {
+  background-color: #5b77c4;
+  color: white;
+  fill: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 400px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+}
+
+.submit:hover {
+  background: #3f46ad;
+}
+
+/* Formats the left side of the main content */
+.side {
+  flex: 50%;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.columns {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.columns a {
+  text-decoration: none;
+  display: block;
+  color: #6d6f7b;
+}
+
+.columns a:hover {
+  color: #3f46ad;
+}
+
+/* Make the first element of each column bold */
+.column1 li:first-child {
+  color: #6d6f7b;
+  font-weight: 600;
+}
+
+.column2 li:first-child {
+  color: #6d6f7b;
+  font-weight: 600;
+}
+
+.column3 li:first-child {
+  color: #6d6f7b;
+  font-weight: 600;
+}
+
+.column4 li:first-child {
+  color: #6d6f7b;
+  font-weight: 600;
+}
+
+/* Formats each column */
+/* Adapted from: https://slack.com/ */
+.column1 {
+  padding: 48px;
+  font-weight: 200;
+  line-height: 2.5;
+  padding-right: 5vw;
+}
+
+.column2 {
+  padding: 48px;
+  font-weight: 200;
+  line-height: 2.5;
+  padding-right: 5vw;
+}
+
+.column3 {
+  padding: 48px;
+  font-weight: 200;
+  line-height: 2.5;
+  padding-right: 5vw;
+}
+
+.column4 {
+  padding: 48px;
+  font-weight: 200;
+  line-height: 2.5;
+  padding-right: 5vw;
+}
+
+/* Aligns the left and right sides of the footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer a {
+  text-decoration: none;
+  display: block;
+  color: #6d6f7b;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #3f46ad;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Padding for every element except the first element */
+.contact li:not(:first-child) {
+  padding-left: 15px;
+}
+
+/* Padding for the first element */
+.contact li:first-child {
+  padding-left: 70px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Padding for every element except the last element */
+.social li:not(:last-child) {
+  padding-right: 15px;
+}
+
+/* Padding for the last element */
+.social li:last-child {
+  padding-right: 70px;
+}
+
+/* Change formatting when the screen is 1040px wide */
+@media only screen and (max-width: 1040px) {
+  /* Center the left and right sides of the navigation bar */
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+/* Change formatting when the screen is 840px wide */
+@media only screen and (max-width: 840px) {
+  /* Stack the left and right sides of the navigation bar */
+  .navigation {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* Stack the right side of the main content on top of the left side */
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Shrink the header font size */
+  .header {
+    font-size: calc(30px + 5.4vw);
+  }
+
+  /* Shrink the paragraph font size */
+  p {
+    font-size: calc(16px + .27vw);
+  }
+
+  .side {
+    margin: auto;
+    padding: 50px;
+  }
+
+  /* Move the columns to the left */
+  .columns {
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Change formatting when the screen is 640px wide */
+@media only screen and (max-width: 640px) {
+  /* Stretch email field */
+  .email {
+    width: 85vw;
+    margin-bottom: 20px;
+  }
+
+  /* Stretch submit field */
+  .submit {
+    width: 85vw;
+  }
+
+  /* Stack the columns in rows */
+  .columns {
+    flex-flow: row wrap;
+  }
+
+  /* Maximum 2 columns per row */
+  .column1 {
+    flex: 50%;
+  }
+
+  .column2 {
+    flex: 50%;
+  }
+
+  .column3 {
+    flex: 50%;
+  }
+
+  .column4 {
+    flex: 50%;
+  }
+
+  /* Stack the left and right sides of the footer */
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    padding-bottom: 35px;
+  }
+
+  /* Remove padding for the first element */
+  .contact li:first-child {
+    padding-left: 0;
+  }
+
+  /* Remove padding for the last element */
+  .social li:last-child {
+    padding-right: 0;
+  }
 }

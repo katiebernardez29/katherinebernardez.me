@@ -1,32 +1,93 @@
+<!--Used https://www.w3schools.com/ to look up general information about HTML elements-->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>katherinebernardez.me</title>
+    <title>Katherine Bernardez</title>
     <link rel="stylesheet" href="styles.css">
+    <!--Fonts taken from https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!--Icons taken from https://fontawesome.com/-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!--Control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
   <body>
-    <h1>Welcome to my webpage!</h1>
-    <p>This is where you can learn fun facts about me.</p>
-    <p id="colorpurple">Here are some of my favorite foods:</p>
-    <ul>
-      <li>Pasta</li>
-      <li>Pizza</li>
-      <li>Sushi</li>
-    </ul>
-    <p id="colorpurple">Here are some of my favorite places to travel to:</p>
-    <ul>
-      <li>Seattle</li>
-      <li>Hawaii</li>
-      <li>Cincinnati</li>
-    </ul>
-    <p id="colorpurple">Here are some of my favorite animals:</p>
-    <ul>
-      <li>Elephants</li>
-      <li>Koalas</li>
-      <li>Small dogs</li>
-    </ul>
-    <p>Thanks for visiting my webpage!</p>
-    <img src="elephant.jpg" width="150" height="150">
+    <!--Flex container that contains the navigation bar-->
+    <!--Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+    <nav>
+      <ul class="navigation">
+        <!--Flex container that contains the right side of the navigation bar-->
+        <div class="icon">
+          <!--Image taken from https://www.pinterest.com/pin/117164027777752516/?lp=true-->
+          <li><a href="http://katherinebernardez.me/"><img src="elephant.jpg"></a></li>
+        </div>
+        <!--Flex container that contains the left side of the navigation bar-->
+        <div class="nav">
+          <li><a href="http://dartmouthwomensclubsoccer.blogspot.com/" target="blank">Game Summaries</a></li>
+          <li><a href="https://calendar.google.com/calendar/embed?src=veag1mu85dunjrrhhullloljrc@group.calendar.google.com&ctz=America/New_York" target="blank">Team Calendar</a></li>
+          <li><a href="https://sites.google.com/site/region1clubsoccer/" target="blank">League Standings</a></li>
+          <li><a href="https://www.youtube.com/watch?v=4IGL1GxQQ9w&feature=youtu.be" target="blank">Intro Video</a></li>
+        </div>
+      </ul>
+    </nav>
+    <!--Flex container that contains the main content-->
+    <!--Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+    <div class="wrapper">
+      <!--Flex container that contains the left side of the main content-->
+      <div class="side">
+        <img src="me.jpg">
+      </div>
+      <!--Flex container that contains the right side of the main content-->
+      <div class="main">
+        <h1 class="header">Welcome to my webpage!</h1>
+        <p>This is where you can learn fun facts about me.</p>
+        <input class="email" type="text" placeholder="Email Address">
+        <input class="submit" type="submit" value="Submit">
+        <p>Want weekly updates from me? Enter your email address!</p>
+      </div>
+    </div>
+    <div class="content">
+      <h1>About Me</h1>
+    </div>
+    <!--Flex container that contains the columns-->
+    <div class="columns">
+      <!--Flex container that contains the first column-->
+      <ul class="column1">
+        <li>Favorite Foods</li>
+        <li><a href="#">Pasta</a></li>
+        <li><a href="#">Pizza</a></li>
+        <li><a href="#">Sushi</a></li>
+      </ul>
+      <!--Flex container that contains the second column-->
+      <ul class="column2">
+        <li>Favorite Places</li>
+        <li><a href="#">Seattle</a></li>
+        <li><a href="#">Hawaii</a></li>
+        <li><a href="#">Cincinnati</a></li>
+      </ul>
+      <!--Flex container that contains the third column-->
+      <ul class="column3">
+        <li>Favorite Animals</li>
+        <li><a href="#">Elephants</a></li>
+        <li><a href="#">Koalas</a></li>
+        <li><a href="#">Small Dogs</a></li>
+      </ul>
+      <!--Flex container that contains the fourth column-->
+    </div>
+    <!--Flex container that contains the footer-->
+    <nav>
+      <ul class="footer">
+        <!--Flex container that contains the left side of the footer-->
+        <div class="contact">
+          <li><a href="mailto:katherine.o.bernardez.20@dartmouth.edu">Contact Me<a></li>
+        </div>
+        <!--Flex container that contains the right side of the footer-->
+        <div class="social">
+          <li><a href="https://www.facebook.com/katie.bernardez.5" target="blank"><i class="fab fa-facebook-f"></i><a/></li>
+          <li><a href="https://www.instagram.com/katieebaabyyy/" target="blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/katherine-bernardez-0ba461157/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+        </div>
+      </ul>
+    </nav>
   </body>
 </html>
