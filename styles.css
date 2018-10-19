@@ -121,6 +121,14 @@ img {
   width: 100%;
 }
 
+.main {
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 /* Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .columns {
   display: flex;
